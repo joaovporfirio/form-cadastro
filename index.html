@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Cadastro de Currículo</title>
+        <link rel="stylesheet" href="estilo.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Smooch&family=Yellowtail&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <h1 id="titulo1">Cadastro de Currículo</h1>
+
+        <form  name="cadastro" action="home.html" method="post" enctype="multipart/form-data" >
+           
+            <fieldset >  
+                <legend>Dados pessoais</legend>          
+            <label>
+                Nome:<br>
+                <input type="text" name="nome" class="text" required minlength="3"/>
+            </label>
+
+            <label>
+                Sobrenome:<br>
+                <input type="text" name="sobrenome" class="text"/>
+            </label>
+
+            <label>
+                Email:<br>
+                <input type="email" name="email" class="text" required/>
+            </label>
+
+            <label>
+                Telefone:<br>
+                <input type="tel" name="telefone" class="text" required/>
+            </label>
+
+            <label>
+                Cargo:<br>
+                <select name="cargo">
+                    <option value=""></option>
+                    <option value="1">Administrativo</option>
+                    <option value="2">Engenharia</option>
+                    <option value="3">TI</option>
+                    <option value="1">Logística</option>
+                    
+                </select>
+            </label>
+
+        </fieldset>
+
+        <fieldset><legend>Anexos</legend>
+            <label>
+                Enviar Foto:<br>
+                <input type="file" name="img" accept="image/*"/>
+            </label>
+
+            <label>
+                Enviar Currículo:<br>
+                <input type="file" name="curriculo" accept="application/pdf"/>
+            </label>
+        </fieldset>
+
+            <label id="check">
+                <input type="checkbox" name="checkbox" required />
+                <b>Declaro que todas as informações acima são verdadeiras! </b>
+                </label>
+
+            <button>Cadastrar Currículo</button>
+
+        </form>
+
+    </body>
+
+
+
+
+</html>
